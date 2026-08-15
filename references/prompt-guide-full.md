@@ -15,30 +15,30 @@ This file is the full guide content behind the summary in SKILL.md.
 
 ## Key Elements to Include (6 elements: official text)
 
-1. **Establish the Shot** — Use cinematography terms that match your intended
+1. **Establish the Shot**, Use cinematography terms that match your intended
    genre. Include shot scale or category-specific characteristics to refine the
    visual style.
-2. **Set the Scene** — Describe lighting conditions, color palette, surface
+2. **Set the Scene**, Describe lighting conditions, color palette, surface
    textures, and atmosphere to establish mood and tone.
-3. **Describe the Action** — Write the core action as a natural sequence,
+3. **Describe the Action**, Write the core action as a natural sequence,
    flowing clearly from beginning to end.
-4. **Define the Character(s)** — Include age, hairstyle, clothing, and
+4. **Define the Character(s)**, Include age, hairstyle, clothing, and
    distinguishing features. Express emotion through physical cues, not abstract
    labels.
-5. **Identify Camera Movement(s)** — Specify how and when the camera moves.
+5. **Identify Camera Movement(s)**, Specify how and when the camera moves.
    Describing how subjects appear after the movement helps the model complete
    the motion accurately.
-6. **Describe the Audio** — Clearly describe ambient sound, music, speech, or
+6. **Describe the Audio**, Clearly describe ambient sound, music, speech, or
    singing. Place spoken dialogue in quotation marks. Specify language and
    accent if needed.
 
 ## Structuring Your Prompt (official principles)
 
-- Keep the scene focused — a few clear characters and actions read better than
+- Keep the scene focused, a few clear characters and actions read better than
   a crowded frame.
-- Keep lighting consistent — one coherent light logic per shot; mixed light
+- Keep lighting consistent, one coherent light logic per shot; mixed light
   sources confuse the result.
-- Start simple and layer — begin with the core shot, then add detail as you
+- Start simple and layer, begin with the core shot, then add detail as you
   iterate.
 
 ### Simple / Single-Shot
@@ -117,7 +117,7 @@ This file is the full guide content behind the summary in SKILL.md.
 > left; the synth score continues across the cut, traffic muffled. She
 > whispers, "He's late." Another hard cut jumps to a low-angle shot of a man's
 > scuffed boots stepping into a puddle at the curb; the music drops to a low
-> drone. He lifts his head into frame — short dark hair, soaked jacket — and
+> drone. He lifts his head into frame, short dark hair, soaked jacket, and
 > smiles toward her off-screen as a bus rumbles past.
 
 ## Keep in Mind (model limits)
