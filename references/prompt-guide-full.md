@@ -1,19 +1,19 @@
-# LTX-2.5 Prompt Guide — tam distillenmiş içerik
+# LTX-2.5 Prompt Guide: fully distilled content
 
-Kaynak: https://ltx.io/blog/ltx-2-5-prompt-guide (Rachel Luxemburg, 2026-08-10).
-Bu dosya, SKILL.md'deki özetin arkasındaki tam rehber içeriğidir.
+Source: https://ltx.io/blog/ltx-2-5-prompt-guide (Rachel Luxemburg, 2026-08-10).
+This file is the full guide content behind the summary in SKILL.md.
 
-## Key Takeaways (resmi özet)
+## Key Takeaways (official summary)
 
-- LTX-2.5 prompt'ları şunları kapsamalı: shot type, scene/lighting, action,
-  character detail, camera movement, audio. Tek çekim = kesintisiz plan;
-  diyalog ağırlıklı sahneler = screenplay stili.
-- Multi-shot (2–4 kesme): kesme başına açık geçiş dili, yeniden kurulan çerçeve,
-  kesmeler arası ses sürekliliği şart.
-- IC-LoRA araçlarının kendi formatları var: Dub-It tam diyalog metni ister;
-  Video Editing tek somut, eklemeli talimatla en iyi çalışır.
+- LTX-2.5 prompts should cover: shot type, scene/lighting, action,
+  character detail, camera movement, audio. Single shot = uninterrupted plan;
+  dialogue-heavy scenes = screenplay style.
+- Multi-shot (2–4 cuts): each cut needs explicit transition language, a
+  re-established frame, and audio continuity across cuts.
+- IC-LoRA tools have their own formats: Dub-It requires the full dialogue text;
+  Video Editing works best with one concrete, additive instruction.
 
-## Key Elements to Include (6 element — resmi metin)
+## Key Elements to Include (6 elements: official text)
 
 1. **Establish the Shot** — Use cinematography terms that match your intended
    genre. Include shot scale or category-specific characteristics to refine the
@@ -32,7 +32,7 @@ Bu dosya, SKILL.md'deki özetin arkasındaki tam rehber içeriğidir.
    singing. Place spoken dialogue in quotation marks. Specify language and
    accent if needed.
 
-## Structuring Your Prompt (resmi ilkeler)
+## Structuring Your Prompt (official principles)
 
 - Keep the scene focused — a few clear characters and actions read better than
   a crowded frame.
@@ -43,26 +43,29 @@ Bu dosya, SKILL.md'deki özetin arkasındaki tam rehber içeriğidir.
 
 ### Simple / Single-Shot
 
-- Tek akıcı paragraf; present tense fiiller.
-- Detay seviyesi çekim ölçeğiyle orantılı (close-up > wide shot detay ister).
-- Kamera hareketini özneye göre tanımla.
-- ~4–8 betimleyici cümle. Iterate freely — LTX hızlı deneme için tasarlandı.
+- One fluid paragraph; present tense verbs.
+- Level of detail proportional to the shot scale (a close-up demands more detail
+  than a wide shot).
+- Describe camera movement relative to the subject.
+- ~4–8 descriptive sentences. Iterate freely: LTX is designed for fast
+  experimentation.
 
 ### Longer / Screenplay-Style
 
-- Diyalog, çoklu beat veya hassas zamanlama varsa: scene headers, character
-  cues, quoted dialogue. Temel kurallar aynı.
+- When there is dialogue, multiple beats, or precise timing: scene headers,
+  character cues, quoted dialogue. The core rules are the same.
 
 ### Length
 
-- Sabit sayı değil, karmaşıklıkla orantılı. Basit tek çekim 4–8 cümle;
-  screenplay sahneleri daha uzun olabilir — her cümle somut görsel/ses detayı
-  katmalı.
+- Not a fixed number; proportional to complexity. A simple single shot is 4–8
+  sentences; screenplay scenes can be longer: every sentence must add concrete
+  visual/sound detail.
 
-## Multi-Shot Prompts (resmi kurallar)
+## Multi-Shot Prompts (official rules)
 
-- Tam sahneyi TEK kronolojik paragraf olarak yaz. Shot list, numaralı beat veya
-  screenplay slugline KULLANMA (kesmeyi düz yazıyla anlatmıyorsan).
+- Write the whole scene as ONE chronological paragraph. Do NOT use a shot list,
+  numbered beats, or screenplay sluglines (sluglines are only acceptable when
+  you describe the cut in plain prose).
 
 ### Single-shot vs Multi-shot
 
@@ -75,33 +78,36 @@ Bu dosya, SKILL.md'deki özetin arkasındaki tam rehber içeriğidir.
 
 ### What to Include at Every Cut
 
-- Geçişi doğal dille adlandır: "A hard cut transitions to…", "The view cuts to a
-  close-up of…", "A match cut connects…", "The image dissolves into…".
-- Yeni çekimi yeniden kur: shot scale, camera angle, karede kim/ne var,
-  ışık değiştiyse.
-- Kimlik tutarlılığı: tekrar eden kişi/nesnelerde aynı görsel etiketleri kullan
+- Name the transition in natural language: "A hard cut transitions to…", "The
+  view cuts to a close-up of…", "A match cut connects…", "The image dissolves
+  into…".
+- Re-establish the new shot: shot scale, camera angle, who/what is in frame,
+  and whether lighting changed.
+- Identity consistency: use the same visual tags for recurring people/objects
   ("the woman in the red coat, earlier at the table, now…").
-- Ses sürekliliğini belirt: "the piano score continues across the cut" veya
+- State audio continuity: "the piano score continues across the cut" or
   "the dialogue drops; only wind remains."
 
 ### Tips for Strong Multi-Shot Prompts
 
-- 2–4 çekim tercih et; daha fazlası kısa ve net beat'ler ister.
-- Her çekime net bir iş ver (establish → detail → reaction; wide → medium → close-up).
-- Aksiyonu kronolojik tut: "Initially…", "A moment later…", "Simultaneously…".
-- Single-shot kuralları aynen geçerli: present tense, fiziksel duygu ipuçları,
-  tırnaklı diyalog, somut kamera dili.
-- Kesme zaman/yer atlamıyorsa çelişen coğrafya veya açıklanmamış kostüm
-  değişiminden kaçın.
+- Prefer 2–4 shots; more than that demands short, clear beats.
+- Give each shot a clear job (establish → detail → reaction; wide → medium →
+  close-up).
+- Keep the action chronological: "Initially…", "A moment later…",
+  "Simultaneously…".
+- The single-shot rules still apply: present tense, physical emotion cues,
+  quoted dialogue, concrete camera language.
+- If the cut does not skip time/place, avoid contradictory geography or
+  unexplained costume changes.
 
 ### When to Stay Single-Shot
 
-- Kesintisiz kamera hareketi, samimi performans veya tek karede kalması gereken
-  lip-sync diyalog istiyorsan.
-- i2v (ilk kareden video): açılış görüntüsünden kasıtlı kesme anlatmıyorsan
-  tek çekim tercih et.
+- When you want uninterrupted camera movement, an intimate performance, or
+  lip-sync dialogue that must stay in a single frame.
+- i2v (video from a first frame): prefer a single shot unless you are describing
+  an intentional cut away from the opening image.
 
-## Resmi Multi-Shot Örnek Prompt (birebir)
+## Official Multi-Shot Example Prompt (verbatim)
 
 > A wide shot frames a rainy city intersection at dusk, neon signs reflecting on
 > wet asphalt. A young woman in a yellow raincoat walks toward camera, gripping
@@ -114,37 +120,39 @@ Bu dosya, SKILL.md'deki özetin arkasındaki tam rehber içeriğidir.
 > drone. He lifts his head into frame — short dark hair, soaked jacket — and
 > smiles toward her off-screen as a bus rumbles past.
 
-## Keep in Mind (model sınırları)
+## Keep in Mind (model limits)
 
-- **On-screen text**: LTX-2.5 kısa metin doğruluğunu ve ince detayları
-  iyileştirdi ama frame'ler arası tutarlı yazım garantisi YOK. Metni kısa ve
-  belirgin tut, klip boyunca doğrula, kritik başlık/etiket/logo'yu post'ta ekle.
-- **Complex physics**: çok kaotik hareket artefakt üretebilir; basit, makul
-  hareket daha güvenilir (dans gibi günlük hareket sorunsuz).
+- **On-screen text**: LTX-2.5 improved short-text accuracy and fine details, but
+  there is NO guarantee of consistent spelling across frames. Keep text short and
+  prominent, verify it throughout the clip, and add critical titles/labels/logos
+  in post.
+- **Complex physics**: very chaotic motion can produce artifacts; simple,
+  plausible motion is more reliable (everyday motion such as dance is fine).
 
-## Dub-It (Speech Replacement) — resmi bölüm
+## Dub-It (Speech Replacement): official section
 
-Video-to-video: mevcut videodaki konuşmayı değiştirir. Kaynak video + yeni
-konuşma prompt'u verilir.
+Video-to-video: replaces the speech in an existing video. You provide the
+source video + a new speech prompt.
 
 Template: `[Speaker] is speaking [Language/Accent], saying: "[Dialogue]"`
 
-Örnek: `A woman speaking in Russian saying: "Сегодня отличный день, чтобы
+Example: `A woman speaking in Russian saying: "Сегодня отличный день, чтобы
 протестировать рабочие процессы ComfyUI для дубляжа с использованием LTX."`
 
-- Prompt'a duygu/teslimat stili eklenebilir.
-- Requirements: TAM diyalog metni yaz (model çeviri YAPMAZ); native script
-  (hedef dil alfabesi); tek konuşmacı (beta).
-- Best practices: uzunluk ≈ orijinal konuşmanın hece/timing'i; biraz uzun > kısa.
-  Çok uzun = kelime atlanır; çok kısa = yavaş/doğal olmayan ses.
-- Validated diller: English, French, Spanish, German, Russian.
+- You can add emotion/delivery style to the prompt.
+- Requirements: write the FULL dialogue text (the model does NOT translate);
+  native script (the target language's alphabet); a single speaker (beta).
+- Best practices: length ≈ the syllables/timing of the original speech;
+  slightly longer > shorter. Too long = words get skipped; too short =
+  slow/unnatural voice.
+- Validated languages: English, French, Spanish, German, Russian.
 
 ## Video Editing IC-LoRA
 
-- Tek somut, eklemeli talimat: ne değişiyor + ne kalıyor. (Detaylar için kendi
-  rehberi: resmi blog "each one's guide for setup".)
+- One concrete, additive instruction: what changes + what stays. (For details,
+  see its own guide: the official blog "each one's guide for setup".)
 
-## Additional Helpful Terms (tam terim bankası — resmi liste)
+## Additional Helpful Terms (full term bank: official list)
 
 **Animation**: Stop-motion · 2D / 3D animation · Claymation · Hand-drawn
 **Stylized**: Comic book · Cyberpunk · 8-bit pixel · Surreal · Minimalist ·
